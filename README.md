@@ -14,6 +14,8 @@ Adimology adalah aplikasi web untuk menganalisis target harga saham berdasarkan 
 ---
 
 ## Changelog
+
+### v0.1.0 (2026-02-11)
 - **Migrasi Otomatis**: Sekarang database mendukung migrasi otomatis (perlu eksekusi `supabase/000_init.sql` secara manual terlebih dahulu di Supabase), selanjutnya setiap build akan menjalankan file SQL baru secara otomatis.
 - **Visualisasi History Emiten**: Penambahan komponen visualisasi riwayat analisis emiten yang lebih informatif.
 - **Penyimpanan Parameter History**: Menyimpan preferensi jumlah riwayat (3, 5, 10, 20 hari) ke database untuk konsistensi antar sesi (file migrasi `supabase/009_add_keystat_signal.sql`).
@@ -27,18 +29,16 @@ Adimology adalah aplikasi web untuk menganalisis target harga saham berdasarkan 
 - **Data Terintegrasi Stockbit**: Mengambil data transaksi broker summary.
 - **History & Watchlist**: Menyimpan riwayat analisis untuk dipantau di kemudian hari.
 - **Sync Watchlist & Hapus Otomatis**: Menampilkan watchlist langsung dari akun Stockbit termasuk fungsi delete.
-- **Tracking Real Harga (H+1)**: Secara otomatis memperbarui harga riil di hari bursa berikutnya untuk memverifikasi apakah target analisis tercapai.
+- **Tracking Real Harga**: Otomatis memperbarui harga riil di hari bursa berikutnya untuk memverifikasi target.
 - **Sistem Background Job & Retry**: Pemantauan status background job (analisis otomatis) dengan tombol **Retry** untuk menjalankan ulang job yang gagal.
 - **Advanced Charts (TradingView & Chartbit)**:
   - Integrasi grafis dengan **Chartbit**.
   - Integrasi **TradingView Advanced Chart** dengan indikator RSI dan Oversold untuk konfirmasi sinyal Buy/Sell. Register ke https://www.tradingview.com/ untuk bisa melihat grafiknya.
-- **Filter Flag & Watchlist**: Filter cepat berdasarkan flag emiten (Big Spec, Trend, dll) dan grup watchlist untuk mempermudah pemantauan portfolio.
-- **Frozen Glass Design System**: Antarmuka modern dengan gaya *Glassmorphism/Frozen Glass Material*.
-- **Multi-Theme Support**: Dukungan penuh mode **Light** dan **Dark** yang sinkron dengan sistem atau preferensi pengguna.
+- **Filter Flag & Watchlist**: Filter cepat berdasarkan flag emiten dan watchlist untuk mempermudah pemantauan portfolio.
 - **Ringkasan Broker (Top 1, 3, 5)**: Visualisasi kekuatan akumulasi vs distribusi broker.
-- **Export to PDF**: Unduh laporan riwayat analisis dalam format PDF yang rapi.
 - **AI Story Analysis**: Analisis berita dan sentimen pasar menggunakan AI (Gemini) untuk merangkum story, SWOT, dan katalis emiten secara instan.
-- **Multi-Version Analysis Tracking**: Menyimpan dan menampilkan riwayat analisis AI sebelumnya sehingga Anda bisa melacak perubahan narasi pasar dari waktu ke waktu.
+- **Multi-Version Analysis**: Menyimpan dan menampilkan riwayat analisis AI sebelumnya sehingga Anda bisa melacak perubahan narasi pasar dari waktu ke waktu.
+- **Export to PDF**: Unduh laporan riwayat analisis dalam format PDF yang rapi.
 
 ---
 
