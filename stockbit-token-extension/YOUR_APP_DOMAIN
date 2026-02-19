@@ -7,8 +7,8 @@
     "webRequest"
   ],
   "host_permissions": [
-    "https://stockbit.com/stream",
-    "https://app.netlify.com/projects/adimologg/overview"
+    "https://stockbit.com/",
+    "https://app.netlify.com/"
   ],
   "background": {
     "service_worker": "background.js"
