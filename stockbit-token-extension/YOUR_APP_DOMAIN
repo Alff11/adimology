@@ -7,8 +7,8 @@
     "webRequest"
   ],
   "host_permissions": [
-    "https://Yelyalf.stockbit.com/",
-    "https://adimologg.netlify.app/"
+    "https://*.stockbit.com/*",
+    "https://YOUR_APP_DOMAIN.netlify.app/*"
   ],
   "background": {
     "service_worker": "background.js"
